@@ -41,7 +41,7 @@ The magnitude and direction of the graident are calculated as follows:
 
 The orientation is the angle away from the positive x-axis in a clockwise manner, as follows:
 <p align="center">
-  <img src="Additional%20Files/GradientDirection.png" alt="Gradient orientation" width="25%">
+  <img src="Additional%20Files/GradientDirection.png" alt="Gradient orientation" width="35%">
 </p>
 
 ## Step 4: Non-Maximum Suppression
@@ -64,6 +64,14 @@ To group the pixels, we need to identify a high and low threshold value. Pixels 
 
 ## Step 6: Edge Hysteresis
 The final step is to link the weak pixels to the strong ones using a concept known as Edge-Hysteresis. Comparing the Strong pixels to the weak ones, if the weak pixels are adjacent to a strong one along the direction of the edge, this process will then flag that weak pixel as an edge as well.
+<p align="center">
+  <img src="Additional%20Files/EdgeHysteresis.PNG" alt="Edge Hysteresis" width="50%">
+</p>
 
-
+# More Output Examples
+Original Image             |  Edge Map
+:-------------------------:|:-------------------------:
+![Aladdin Image normal](Images/GeniewAladdin.jpg)  |  ![Aladdin Canny Edge](/Results/GeniewAladdin_Result.png)
+![Butterfly normal](Images/Butterfly.jpg)  |  ![Butterfly Canny Edge](/Results/Butterfly_Result.png)
+![Race Image normal](Images/Race.jpg)  |  ![Race Canny Edge](/Results/Race_Result.png)
 
